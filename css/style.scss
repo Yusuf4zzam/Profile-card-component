@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+// Global Rules
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $Dark-cyan;
+}
+.container {
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .box {
+        border-radius: 7px;
+        overflow: hidden;
+        width: 350px;
+        background: #FFF;
+        position: relative;
+        .image {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            img {
+                border-radius: 50%;
+                border: 7px solid #FFF;
+            }
+        }
+        .text-parent {
+            padding: 70px 0 20px;
+            .user {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                h4 {
+                    margin-right: 5px;
+                    color: $Very-dark-desaturated-blue;
+                }
+                span {
+                    font-size: 14px;
+                    color: $Dark-grayish-blue;
+                }
+                .place {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    color: $Dark-grayish-blue;
+                }
+            }
+            .content {
+                margin-top: 20px;
+                padding-top: 25px;
+                border-top: 1px solid rgba(0, 0, 0, .2);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .text {
+                    text-align: center;
+                    width: 32%;
+                    h4 {
+                        margin-bottom: 5px;
+                        color: $Very-dark-desaturated-blue;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: $Dark-grayish-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
